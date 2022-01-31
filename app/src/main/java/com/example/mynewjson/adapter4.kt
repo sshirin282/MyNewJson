@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class adapter4(val context: Context,val list: List<Datamodel2>):RecyclerView.Adapter<adapter4.ViewHolder>() {
 
-    private val inflater=context.getSystemService(Context.LAYOUT_INFLATER_SERVICE)as LayoutInflater
+    private val inflater=context?.getSystemService(Context.LAYOUT_INFLATER_SERVICE)as LayoutInflater
 
 
     class ViewHolder (view: View):RecyclerView.ViewHolder(view){

@@ -47,7 +47,8 @@ class BlankFragment2 : Fragment() {
         val url:String="https://jsonplaceholder.typicode.com/posts"
 
         val request:StringRequest= StringRequest(Request.Method.GET,url,{
-            Log.e("sss",it)
+          //  Log.e("sss",it)
+
             val jsonArray:JSONArray= JSONArray(it)
             for (i in 0 until jsonArray.length()){
                 val jsonObject:JSONObject=jsonArray.getJSONObject(i)

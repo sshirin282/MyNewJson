@@ -11,7 +11,7 @@ import com.bumptech.glide.Glide
 
 class adapter3(val context: Context, val list: List<DataModel3>):RecyclerView.Adapter<adapter3.ViewHolder>(){
 
-    private val inflater=context.getSystemService(Context.LAYOUT_INFLATER_SERVICE)as LayoutInflater
+    private val inflater=context?.getSystemService(Context.LAYOUT_INFLATER_SERVICE)as LayoutInflater
 
     class ViewHolder (view: View):RecyclerView.ViewHolder(view) {
         val imageView:ImageView=view.findViewById(R.id.list3image)

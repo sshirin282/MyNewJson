@@ -11,7 +11,7 @@ import com.bumptech.glide.Glide
 
 class adapter1(val context: Context, val list:List<DataModel1>):RecyclerView.Adapter<adapter1.ViewHolder>() {
 
-    private val inflater: LayoutInflater=context.getSystemService(Context.LAYOUT_INFLATER_SERVICE)as LayoutInflater
+    private val inflater: LayoutInflater=context?.getSystemService(Context.LAYOUT_INFLATER_SERVICE)as LayoutInflater
 
     class ViewHolder (view:View):RecyclerView.ViewHolder(view){
         val textView:TextView=view.findViewById(R.id.list1text)

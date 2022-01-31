@@ -48,7 +48,7 @@ class BlankFragment1 : Fragment() {
 
         val request:StringRequest=StringRequest(Request.Method.GET,url,{
             Log.d("shirin",it)
-           // val jb:JSONArray= JSONArray(it)
+
             val jb:JSONObject= JSONObject(it)
             val ja:JSONArray=jb.getJSONArray("heroes")
             for (i in 0 until ja.length()){
